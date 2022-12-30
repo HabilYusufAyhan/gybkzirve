@@ -6,37 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bilişim Zirvesi</title>
     <link rel="stylesheet" href="/style/style.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"
+      integrity="sha512-BdHyGtczsUoFcEma+MfXc71KJLv/cd+sUsUaYYf2mXpfG/PtBjNXsPo78+rxWjscxUYN2Qr2+DbeGGiJx81ifg=="
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
+   
+     
+    <div class="background"></div>
     <nav class="navbarmain">
       <ul class="navbar">
-        <li class="navbarli">Sponsorlar</li>
-        <li class="navbarli">Kulüpler Hakkında</li>
-        <li class="navbarli navbarimg">
-          <img class="zirvenavbarimg" src="/images/zirve.png" alt="" />
-          <h2 class="textimg" style="color: black;">GYBK BİLİŞİM ZİRVESİ</h2>
-        </li>
-        <li class="navbarli">Zirve Hakkında</li>
-        <li class="navbarli">Konuşmacılarımız</li>
+        <li class="navbarli" onclick="smoothScroll(document.getElementById('icerik'))">Sponsorlar</li>
+        <li class="navbarli" onclick="smoothScroll(document.querySelector('.kulupdiv'))">Kulüpler Hakkında</li>
+        <li class="navbarli" onclick="smoothScroll(document.querySelector('.zirvediv'))">Zirve Hakkında</li>
+        <li class="navbarli" onclick="smoothScroll(document.getElementById('icerik'))">Konuşmacılarımız</li>
       </ul>
     </nav>
+    <li class="navbarimg">
+      <img class="zirvenavbarimg" src="/images/zirve.png" alt="" />
+    </li>
     <section class="zirvehakkinda">
       <div class="zirvediv">
-        <img class="zirveimg" src="" alt="" />
+        <div class="zirvedivimg">
+        <img class="zirveimg" src="/images/zirveimg/1.jpg" alt="" />
+      </div>
         <div class="zirvetext">
-          <h2 class="zirvetitle"></h2>
-          <p class="zirvep"></p>
+          <h2 class="zirvetitle">ZİRVE HAKKINDA</h2>
+          <p class="zirvep">
+           
+          </p>
         </div>
       </div>
     </section>
     <section class="kuluphakkinda">
       <div class="kulupdiv">
-        <img src="" alt="" class="kulupimg1" />
+        <img src="/images/Logo2.png" alt="" class="kulupimg1" />
         <div class="kuluptext">
-          <h2 class="kuluptitle"></h2>
+          <h2 class="kuluptitle">HAKKIMIZDA</h2>
           <p class="kulupp"></p>
         </div>
-        <img src="" alt="" class="kulupimg2" />
+        <img
+          src="/images/beyaz_yazili_gdsc_logo (1).png"
+          alt=""
+          class="kulupimg2"
+        />
       </div>
     </section>
     <section class="konusmacilarimiz">
@@ -158,21 +173,55 @@
       integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
       crossorigin="anonymous"
     ></script>
+    <script src="/JavaScript/script.js"></script>
     <script>
-      function animation() {
-        $(".zirvenavbarimg").css({ width: "100px" });
-        $(".textimg").css({ opacity: "0" });
-        setTimeout(yoket, 1600);
-        
-      }
- function yoket() {
-    $(".textimg").css({ display: "none" });
-    $(".navbarli").css({ opacity: "1","z-index":"1" });
-    $(".navbarmain").css({ "box-shadow": "5px 5px 5px 5px rgba(0, 0, 0, 0.19);" });
-    $(".navbar").css({ "background-color":"black"});
+  jQuery(document).ready(function ($) {
 
- }
-      setTimeout(animation, 3000);
+
+  setInterval(function () {
+      moveRight();
+  }, 3000);
+
+
+var slideCount = $('#slider ul li').length;
+var slideWidth = $('#slider ul li').width();
+var slideHeight = $('#slider ul li').height();
+var sliderUlWidth = slideCount * slideWidth;
+
+$('#slider').css({ width: slideWidth, height: slideHeight });
+
+$('#slider ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
+
+  $('#slider ul li:last-child').prependTo('#slider ul');
+
+  function moveLeft() {
+      $('#slider ul').animate({
+          left: + slideWidth
+      }, 200, function () {
+          $('#slider ul li:last-child').prependTo('#slider ul');
+          $('#slider ul').css('left', '');
+      });
+  };
+
+  function moveRight() {
+      $('#slider ul').animate({
+          left: - slideWidth
+      }, 200, function () {
+          $('#slider ul li:first-child').appendTo('#slider ul');
+          $('#slider ul').css('left', '');
+      });
+  };
+
+  $('a.control_prev').click(function () {
+      moveLeft();
+  });
+
+  $('a.control_next').click(function () {
+      moveRight();
+  });
+
+});    
+
     </script>
   </body>
 </html>

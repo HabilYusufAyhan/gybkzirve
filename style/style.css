@@ -1,83 +1,188 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 /*--------------navbar--------------*/
-body{
-    margin: 0;
+* {
+  font-family: "Roboto", sans-serif;
 }
-.navbarmain{
-    position: fixed;
-    width: 100%;
+body {
+  margin: 0;
+  background: url(/images/zirve.jfif);
+
+  background-attachment: fixed;
+}
+.background {
+  background: rgb(0, 0, 0, 0.25);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+.navbarmain {
+  position: fixed;
+  width: 100%;
+  transition: 0.3s;
+  box-shadow: none;
+  z-index: 2;
+}
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
+  align-items: flex-start;
+  background-color: black;
+  transition: 0.7s;
+}
+.navbarmain:hover {
+  box-shadow: 5px 5px 5px 5px rgb(0, 255, 37, 0.3);
+}
+
+.navbar div {
+  display: flex;
+  flex-direction: row;
+}
+.navbarli {
+  list-style: none;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: white;
+  transition: 0.3s;
+  font-size: 17px;
+}
+.navbarli:hover {
+  color: #00ff25;
+}
+.navbarimg {
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  opacity: 1;
+  list-style: none;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: white;
+  transition: 0.3s;
+  font-size: 17px;
+  font-family: "Roboto", sans-serif;
+  z-index: 2;
+}
+.zirvenavbarimg {
+  position: absolute;
+  width: 100px;
+  transition: 1.5s;
+  animation: fade_text 4s infinite ease-in;
+}
+/*----------------zirve-------------------*/
+.zirvedivimg{
+    width: 500px;
+    border: 3px solid white;
+    border-radius: 10px;
     transition: 0.3s;
-    box-shadow: none;
+    height: auto;
 }
-.navbar{
+.zirveimg{
+  width: 100%;
+  height: 100%;
+ transition: 0.5s;
+}
+.zirvediv{
+    z-index: 1;
+    position: relative;
     display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    padding: 0;
-    margin: 0;
-    align-items: flex-start;
-    background-color: transparent;
-    transition: 0.7s;
-    
+    align-items: center;
+    color: white;
+    justify-content: center;
+    padding-top: 130px;
 }
-.navbarmain:hover{
-    box-shadow: 5px 5px 5px 5px rgb(0, 255, 37,0.3);
+.zirvetext{
+    width: 30%;
+    margin-left: 15vh;
+    background: rgb(0,0,0,0.19);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.navbar div{
-    display: flex;
-    flex-direction: row;
-
+.zirvep{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.zirvetitle{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+/*----------------kulüp-------------------*/
+.textimg {
+  position: absolute;
+  top: 600px;
+  transition: 1.2s;
+}
+.kulupimg1 {
+  width: 30vh;
+  margin-right: 45vh;
+  z-index: 1;
+}
+.kulupimg2 {
+  width: 30vh;
+  margin-left: 45vh;
+  z-index: 1;
   
 }
-.navbarli{
+@keyframes fade_text {
+  0%  { opacity:1;}
+  10%  { opacity:.3; }
+  25%  { opacity: .5; }
+  50%  { opacity:.3; }
+  65%  { opacity:.5; }
+  90%  { opacity: .8; }
+  100% { opacity:1; }
+}
+.kulupdiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 100px;
+}
+.kuluptext {
+  background-color: rgba(0, 0, 0, 0.19);
+  text-align: center;
+  color: white;
+  position: absolute;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+}
+.kulupp {
+  width: 100%;
+}
+.kuluptitle {
+  font-size: 40px;
+  opacity: 0;
+  transition: 0.7s;
+}
+.typed-cursor {
+  display: none;
+}
 
-    list-style: none;
-    cursor: pointer;
-    margin-top: 20px;
-    margin-bottom: 20px;
-   color: white;
-    transition: 0.3s;
-    font-size: 17px;
-    font-family: 'Roboto', sans-serif;
-
-}
-.navbarli:hover{
-    color: #00ff25;
-}
-.navbarimg{
-    width: 100%;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    opacity: 1;
-}
-.zirvenavbarimg{
-    position: absolute;
-    width: 700px;
-    transition: 1.5s;
-}
-.textimg{
-    position: absolute;
-    top: 600px;
-    transition: 1.2s;
-}
 /*----------------webkit--------------------*/
 ::-webkit-scrollbar {
-    width: 5px;
-    height: 100%;
-} 
+  width: 5px;
+  height: 100%;
+}
 ::-webkit-scrollbar-track {
-    background-color: black
-} 
+  background-color: black;
+}
 
 ::-webkit-scrollbar-thumb {
-    background-color: #00ff25
-} 
+  background-color: #00ff25;
+}
 
 ::-webkit-scrollbar-button {
-    background-color: transparent;
-    display: none;
-} 
-
+  background-color: transparent;
+  display: none;
+}
