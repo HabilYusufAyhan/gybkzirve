@@ -1,0 +1,48 @@
+.kulupimg1 {
+    width: 30vh;
+    margin-right: 45vh;
+    z-index: 1;
+  }
+  .kulupimg2 {
+    width: 30vh;
+    margin-left: 45vh;
+    z-index: 1;
+    
+  }
+  @keyframes fade_text {
+    0%  { opacity:1;}
+    10%  { opacity:.3; }
+    25%  { opacity: .5; }
+    50%  { opacity:.3; }
+    65%  { opacity:.5; }
+    90%  { opacity: .8; }
+    100% { opacity:1; }
+  }
+  .kulupdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 100px;
+  }
+  .kuluptext {
+    background-color: rgba(0, 0, 0, 0.19);
+    text-align: center;
+    color: white;
+    position: absolute;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+  }
+  .kulupp {
+    width: 100%;
+  }
+  .kuluptitle {
+    font-size: 40px;
+    opacity: 0;
+    transition: 0.7s;
+  }
+  .typed-cursor {
+    display: none;
+  }
