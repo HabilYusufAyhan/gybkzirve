@@ -5,11 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bilişim Zirvesi</title>
+    <link rel="stylesheet" href="/style/footer.css" />
     <link rel="stylesheet" href="/style/style.css" />
-    <link rel="stylesheet" href="/style/kulup.css">
-    <link rel="stylesheet" href="/style/navbar.css">
-    <link rel="stylesheet" href="/style/zirve.css">
-    <link rel="stylesheet" href="/style/konusmacilarimiz.css">
+    <link rel="stylesheet" href="/style/kulup.css" />
+    <link rel="stylesheet" href="/style/navbar.css" />
+    <link rel="stylesheet" href="/style/zirve.css" />
+    <link rel="stylesheet" href="/style/konusmacilarimiz.css" />
+    <link rel="stylesheet" href="/style/sponsor.css" />
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"
       integrity="sha512-BdHyGtczsUoFcEma+MfXc71KJLv/cd+sUsUaYYf2mXpfG/PtBjNXsPo78+rxWjscxUYN2Qr2+DbeGGiJx81ifg=="
@@ -17,33 +19,64 @@
     ></script>
   </head>
   <body>
-   
-     
     <div class="background"></div>
     <nav class="navbarmain">
       <ul class="navbar">
-        <li class="navbarli" onclick="smoothScroll(document.getElementById('icerik'))">Sponsorlar</li>
-        <li class="navbarli" onclick="smoothScroll(document.querySelector('.kulupdiv'))">Kulüpler Hakkında</li>
-        <li class="navbarli" onclick="smoothScroll(document.querySelector('.zirvediv'))">Zirve Hakkında</li>
-        <li class="navbarli" onclick="smoothScroll(document.getElementById('icerik'))">Konuşmacılarımız</li>
+        <li
+          class="navbarli"
+          onclick="smoothScroll(document.querySelector('.sponsortitle'))"
+        >
+          Sponsorlar
+        </li>
+        <li
+          class="navbarli"
+          onclick="smoothScroll(document.querySelector('.kuluptitle'))"
+        >
+          Kulüpler Hakkında
+        </li>
+        <li
+          class="navbarli"
+          onclick="smoothScroll(document.querySelector('.zirvetitle'))"
+        >
+          Zirve Hakkında
+        </li>
+        <li
+          class="navbarli"
+          onclick="smoothScroll(document.querySelector('.konusmacilarimiztitle'))"
+        >
+          Konuşmacılarımız
+        </li>
       </ul>
     </nav>
     <li class="navbarimg">
-      <img class="zirvenavbarimg" src="/images/logobackground/zirve.png" alt="" />
+      <img
+        class="zirvenavbarimg"
+        src="/images/logobackground/zirve.png"
+        alt=""
+      />
     </li>
+
     <section class="zirvehakkinda">
       <div class="zirvediv">
         <div class="zirvedivimg">
-        <img class="zirveimg" src="/images/zirveimg/1.jpg" alt="" />
-      </div>
+          <img class="zirveimg" src="/images/zirveimg/1.jpg" alt="" />
+        </div>
         <div class="zirvetext">
           <h2 class="zirvetitle">ZİRVE HAKKINDA</h2>
-          <p class="zirvep">
-           
-          </p>
+          <p class="zirvep"></p>
         </div>
       </div>
     </section>
+    <div class="countdown">
+      <h2>KALAN SÜRE</h2>
+      <div class="countdowndivmain">
+        <div class="countdowndiv"><span class="gun"></span><p>Gün</p></div>
+        <div class="countdowndiv"><span class="saat"></span><p>Saat</p></div>
+        <div class="countdowndiv"><span class="dakika"></span><p>Dakika</p></div>
+        <div class="countdowndiv"><span class="saniye"></span><p>Saniye</p></div>
+ 
+      </div>
+    </div>
     <section class="kuluphakkinda">
       <div class="kulupdiv">
         <img src="/images/logobackground/Logo2.png" alt="" class="kulupimg1" />
@@ -62,47 +95,77 @@
       <h2 class="konusmacilarimiztitle">KONUŞMACILARIMIZ</h2>
       <div class="konusmacilarimizdiv">
         <button class="button" onclick="plusDivs(-1)">&#10094;</button>
-        
 
         <div class="konusmacilarimizmain">
-         
           <div class="konusmacilarimizimgtext">
-            <img src="/images/katilimci/1.jfif" alt="" class="konusmacilarimizimg" />
+            <img
+              src="/images/katilimci/1.jfif"
+              alt=""
+              class="konusmacilarimizimg"
+            />
             <h3 class="konusmacilarimizname">Lorem, ipsdfgum dolor.</h3>
             <h5 class="konusmacilarimizexplain">Lorem, ipsum dolor.</h5>
           </div>
           <div class="konusmacilarimizimgtext">
-            <img src="/images/katilimci/2.jfif" alt="" class="konusmacilarimizimg" />
+            <img
+              src="/images/katilimci/2.jfif"
+              alt=""
+              class="konusmacilarimizimg"
+            />
             <h3 class="konusmacilarimizname">Lorem, ipsum dolor.</h3>
             <h5 class="konusmacilarimizexplain">Lorem, idfhdfpsum dolor.</h5>
           </div>
           <div class="konusmacilarimizimgtext">
-            <img src="/images/katilimci/3.jfif" alt="" class="konusmacilarimizimg" />
+            <img
+              src="/images/katilimci/3.jfif"
+              alt=""
+              class="konusmacilarimizimg"
+            />
             <h3 class="konusmacilarimizname">Lorem, ipsum dolor.</h3>
             <h5 class="konusmacilarimizexplain">Lorem, ipvxsum dolor.</h5>
           </div>
           <div class="konusmacilarimizimgtext">
-            <img src="/images/katilimci/4.jfif" alt="" class="konusmacilarimizimg" />
+            <img
+              src="/images/katilimci/4.jfif"
+              alt=""
+              class="konusmacilarimizimg"
+            />
             <h3 class="konusmacilarimizname">Lorem, ipsumqwe dolor.</h3>
             <h5 class="konusmacilarimizexplain">Lorem, ipsum dolor.</h5>
           </div>
           <div class="konusmacilarimizimgtext">
-            <img src="/images/katilimci/5.jfif" alt="" class="konusmacilarimizimg" />
+            <img
+              src="/images/katilimci/5.jfif"
+              alt=""
+              class="konusmacilarimizimg"
+            />
             <h3 class="konusmacilarimizname">Lorem, ipsum dolor.</h3>
             <h5 class="konusmacilarimizexplain">Lorem, ipsum dolor.</h5>
           </div>
           <div class="konusmacilarimizimgtext">
-            <img src="/images/katilimci/6.jfif" alt="" class="konusmacilarimizimg" />
+            <img
+              src="/images/katilimci/6.jfif"
+              alt=""
+              class="konusmacilarimizimg"
+            />
             <h3 class="konusmacilarimizname">Lorem, ipsum dolor.</h3>
             <h5 class="konusmacilarimizexplain">Lorem, ipsum dolor.</h5>
           </div>
           <div class="konusmacilarimizimgtext">
-            <img src="/images/katilimci/7.jfif" alt="" class="konusmacilarimizimg" />
+            <img
+              src="/images/katilimci/7.jfif"
+              alt=""
+              class="konusmacilarimizimg"
+            />
             <h3 class="konusmacilarimizname">Lorem, ipsum dolor.</h3>
             <h5 class="konusmacilarimizexplain">Lorem, ipsum dolor.</h5>
           </div>
           <div class="konusmacilarimizimgtext">
-            <img src="/images/katilimci/8.jfif" alt="" class="konusmacilarimizimg" />
+            <img
+              src="/images/katilimci/8.jfif"
+              alt=""
+              class="konusmacilarimizimg"
+            />
             <h3 class="konusmacilarimizname">Lorem, ipsum dolor.</h3>
             <h5 class="konusmacilarimizexplain">Lorem, ipsum dolor.</h5>
           </div>
@@ -111,68 +174,143 @@
       </div>
     </section>
     <section class="sponsor">
+      <h1 class="sponsortitle" style="color: white; font-size: 40px">
+        SPONSORLAR
+      </h1>
+
       <div class="goldsponsormain">
-        <div class="goldsponsor">
-          <img src="" alt="" class="goldsponsorimg" />
-          <h4 class="goldsponsorname"></h4>
-        </div>
-        <div class="goldsponsor">
-          <img src="" alt="" class="goldsponsorimg" />
-          <h4 class="goldsponsorname"></h4>
-        </div>
-        <div class="goldsponsor">
-          <img src="" alt="" class="goldsponsorimg" />
-          <h4 class="goldsponsorname"></h4>
+        <h2 style="font-size: 30px">ALTIN SPONSORLAR</h2>
+        <div class="sponsordesign">
+          <div class="goldsponsor">
+            <img
+              src="/images/logobackground/Logo2.png"
+              alt=""
+              class="goldsponsorimg"
+            />
+            <h4 class="goldsponsorname"></h4>
+          </div>
+          <div class="goldsponsor">
+            <img
+              src="/images/logobackground/Logo2.png"
+              alt=""
+              class="goldsponsorimg"
+            />
+            <h4 class="goldsponsorname"></h4>
+          </div>
+          <div class="goldsponsor">
+            <img
+              src="/images/logobackground/Logo2.png"
+              alt=""
+              class="goldsponsorimg"
+            />
+            <h4 class="goldsponsorname"></h4>
+          </div>
         </div>
       </div>
+
       <div class="silversponsormain">
-        <div class="silversponsor">
-          <img src="" alt="" class="silversponsorimg" />
-          <h4 class="silversponsorname"></h4>
-        </div>
-        <div class="silversponsor">
-          <img src="" alt="" class="silversponsorimg" />
-          <h4 class="silversponsorname"></h4>
-        </div>
-        <div class="silversponsor">
-          <img src="" alt="" class="silversponsorimg" />
-          <h4 class="silversponsorname"></h4>
-        </div>
-        <div class="silversponsor">
-          <img src="" alt="" class="silversponsorimg" />
-          <h4 class="silversponsorname"></h4>
-        </div>
-        <div class="silversponsor">
-          <img src="" alt="" class="silversponsorimg" />
-          <h4 class="silversponsorname"></h4>
+        <h2 style="font-size: 30px">GÜMÜŞ SPONSORLAR</h2>
+        <div class="sponsordesign">
+          <div class="silversponsor">
+            <img
+              src="/images/logobackground/Logo2.png"
+              alt=""
+              class="silversponsorimg"
+            />
+            <h4 class="silversponsorname"></h4>
+          </div>
+          <div class="silversponsor">
+            <img
+              src="/images/logobackground/Logo2.png"
+              alt=""
+              class="silversponsorimg"
+            />
+            <h4 class="silversponsorname"></h4>
+          </div>
+          <div class="silversponsor">
+            <img
+              src="/images/logobackground/Logo2.png"
+              alt=""
+              class="silversponsorimg"
+            />
+            <h4 class="silversponsorname"></h4>
+          </div>
+          <div class="silversponsor">
+            <img
+              src="/images/logobackground/Logo2.png"
+              alt=""
+              class="silversponsorimg"
+            />
+            <h4 class="silversponsorname"></h4>
+          </div>
+          <div class="silversponsor">
+            <img
+              src="/images/logobackground/Logo2.png"
+              alt=""
+              class="silversponsorimg"
+            />
+            <h4 class="silversponsorname"></h4>
+          </div>
         </div>
       </div>
+
       <div class="bronzesponsormain">
-        <div class="bronzesponsor">
-          <img src="" alt="" class="bronzesponsorimg" />
-          <h4 class="bronzesponsorname"></h4>
-        </div>
-        <div class="bronzesponsor">
-          <img src="" alt="" class="bronzesponsorimg" />
-          <h4 class="bronzesponsorname"></h4>
-        </div>
-        <div class="bronzesponsor">
-          <img src="" alt="" class="bronzesponsorimg" />
-          <h4 class="bronzesponsorname"></h4>
-        </div>
-        <div class="bronzesponsor">
-          <img src="" alt="" class="bronzesponsorimg" />
-          <h4 class="bronzesponsorname"></h4>
-        </div>
-        <div class="bronzesponsor">
-          <img src="" alt="" class="bronzesponsorimg" />
-          <h4 class="bronzesponsorname"></h4>
+        <h2 style="font-size: 30px">BRONZ SPONSORLAR</h2>
+        <div class="sponsordesign">
+          <div class="bronzesponsor">
+            <img
+              src="/images/logobackground/Logo2.png"
+              alt=""
+              class="bronzesponsorimg"
+            />
+            <h4 class="bronzesponsorname"></h4>
+          </div>
+          <div class="bronzesponsor">
+            <img
+              src="/images/logobackground/Logo2.png"
+              alt=""
+              class="bronzesponsorimg"
+            />
+            <h4 class="bronzesponsorname"></h4>
+          </div>
+          <div class="bronzesponsor">
+            <img
+              src="/images/logobackground/Logo2.png"
+              alt=""
+              class="bronzesponsorimg"
+            />
+            <h4 class="bronzesponsorname"></h4>
+          </div>
+          <div class="bronzesponsor">
+            <img
+              src="/images/logobackground/Logo2.png"
+              alt=""
+              class="bronzesponsorimg"
+            />
+            <h4 class="bronzesponsorname"></h4>
+          </div>
+          <div class="bronzesponsor">
+            <img
+              src="/images/logobackground/Logo2.png"
+              alt=""
+              class="bronzesponsorimg"
+            />
+            <h4 class="bronzesponsorname"></h4>
+          </div>
         </div>
       </div>
     </section>
     <footer class="footer">
-      <p class="designer"></p>
-      <p class="eugybk"></p>
+      <div class="designanddevelop">
+        <p>GYBK Bilişim Zirvesi</p>
+        <p>Designed And Developed By : <a href="#"> Habil Yusuf Ayhan </a></p>
+      </div>
+      <div class="footera">
+        <a href="">Sponsorlar</a>
+        <a href="">Kulüpler Hakkında</a>
+        <a href="">Zirve Hakkında</a>
+        <a href="">Konuşmacılarımız</a>
+      </div>
     </footer>
 
     <script
