@@ -109,7 +109,7 @@ function gerisayim() {
   var kontrolsaat = saatE.textContent;
   var kontroldakika = dakikaE.textContent;
   var kontrolsaniye = saniyeE.textContent;
-  const kalansaniye = (yeniyilzaman - suan) / 1000;
+  const kalansaniye = ((yeniyilzaman - suan) / 1000)+36000;
   const gun = Math.floor(kalansaniye / 3600 / 24);
   const saat = Math.floor(kalansaniye / 3600) % 24;
   const dakika = Math.floor(kalansaniye / 60) % 60;
