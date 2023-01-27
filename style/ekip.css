@@ -1,0 +1,12 @@
+.ekip{
+    z-index: 1;
+    flex-direction: row;
+    align-items: center;
+}
+.ekip div{
+    width: auto;
+}
+.slick-initialized .slick-slide {
+
+    display: flex;
+    justify-content: center;}
