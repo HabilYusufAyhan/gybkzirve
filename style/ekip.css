@@ -2,6 +2,7 @@
     z-index: 1;
     flex-direction: row;
     align-items: center;
+    margin-top: 75px;
 }
 .ekip div{
     width: auto;
@@ -9,4 +10,20 @@
 .slick-initialized .slick-slide {
 
     display: flex;
-    justify-content: center;}
+    justify-content: center;
+}
+.slick-slide img {
+    width: 350px;
+    border-radius: 20px;
+}
+.slick-arrow{
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+  /*  content-visibility: hidden;*/
+}
+.slick-arrow::after{
+    content: "<";
+}

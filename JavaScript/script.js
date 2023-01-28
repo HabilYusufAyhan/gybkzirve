@@ -156,3 +156,9 @@ function color4(){
 function color5(){
   saniyeE.style.color = 'rgba(255, 255, 255,1)';
 }
+
+const ekipleft = document.querySelector('.slick-prev');
+const ekipright = document.querySelector('.slick-right');
+
+ekipleft.textContent = '<'
+ekipright.textContent = '>'
