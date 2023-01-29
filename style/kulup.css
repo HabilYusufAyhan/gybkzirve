@@ -36,13 +36,13 @@
     flex-direction: column;
     align-items: center;
     border-radius: 20px;
+    box-shadow : 5px 4px 20px 0px black;
   }
   .kulupp {
     width: 100%;
   }
   .kuluptitle {
     font-size: 40px;
-    opacity: 0;
     transition: 0.7s;
   }
   .typed-cursor {
