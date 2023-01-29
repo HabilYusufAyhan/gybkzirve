@@ -2,11 +2,14 @@
     width: 30vh;
     margin-right: 45vh;
     z-index: 1;
+    transition: 0.3s;
   }
   .kulupimg2 {
     width: 30vh;
     margin-left: 45vh;
     z-index: 1;
+    transition: 0.3s;
+
     
   }
   @keyframes fade_text {

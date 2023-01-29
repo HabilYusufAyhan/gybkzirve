@@ -4,20 +4,42 @@ const zirveimg = document.querySelector(".zirveimg");
 const text1 = document.querySelector(".zirvep");
 const konusmacilarimiz = document.querySelector(".konusmacilarimizmain");
 const remaining = document.querySelector(".countdowndivmain");
+const kulupimg1 = document.querySelector('.kulupimg1');
+const kulupimg2 = document.querySelector('.kulupimg2');
 var typing = new Typed(text, {
   strings: [
-    "",
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus veniam tenetur error quibusdam architecto! Consequuntur in quia a ipsa nemo error soluta expedita provident hic labore accusantium nobis, impedit dolorum",
+    
+    "Erzincan Binali Yıldırım Üniversitesi Mühendislik ve Mimarlık Fakültesi Bünyesinde Bulunan Öğrenciler Tarafından 2015 Yılında Kurulmuş Olan Genç ve Yenilikçi Beyinler Kulübümüz kurulduğu günden bugüne düzenlediği ve katıldığı çeşitli seminer, organizasyon, panel, konferans ve etkinliklerle öğrencilere yol göstermiştir. Genç ve Yenilikçi Beyinler Kulübümüz öğrencileri sıkı bir başarı testinden geçirip başarılarını sertifikayla ödüllendirerek öğrencilerin sektörde yer bulma hayallerini gerçekleştirmede yardımcı olmuş ve deneyim kazanmalarında öncü olmuştur.",
+    "Erzincan Binali Yıldırım Üniversitesi Mühendislik ve Mimarlık Fakültesi Bünyesinde Bulunan Öğrenciler Tarafından 2015 Yılında Kurulmuş Olan Genç ve Yenilikçi Beyinler Kulübümüz kurulduğu günden bugüne düzenlediği ve katıldığı çeşitli seminer, organizasyon, panel, konferans ve etkinliklerle öğrencilere yol göstermiştir. Genç ve Yenilikçi Beyinler Kulübümüz öğrencileri sıkı bir başarı testinden geçirip başarılarını sertifikayla ödüllendirerek öğrencilerin sektörde yer bulma hayallerini gerçekleştirmede yardımcı olmuş ve deneyim kazanmalarında öncü olmuştur.", 
+    "Erzincan Binali Yıldırım Üniversitesi Mühendislik ve Mimarlık Fakültesi Bünyesinde Bulunan Öğrenciler Tarafından 2015 Yılında Kurulmuş Olan Genç ve Yenilikçi Beyinler Kulübümüz kurulduğu günden bugüne düzenlediği ve katıldığı çeşitli seminer, organizasyon, panel, konferans ve etkinliklerle öğrencilere yol göstermiştir. Genç ve Yenilikçi Beyinler Kulübümüz öğrencileri sıkı bir başarı testinden geçirip başarılarını sertifikayla ödüllendirerek öğrencilerin sektörde yer bulma hayallerini gerçekleştirmede yardımcı olmuş ve deneyim kazanmalarında öncü olmuştur.",
+    "Erzincan Binali Yıldırım Üniversitesi Mühendislik ve Mimarlık Fakültesi Bünyesinde Bulunan Öğrenciler Tarafından 2015 Yılında Kurulmuş Olan Genç ve Yenilikçi Beyinler Kulübümüz kurulduğu günden bugüne düzenlediği ve katıldığı çeşitli seminer, organizasyon, panel, konferans ve etkinliklerle öğrencilere yol göstermiştir. Genç ve Yenilikçi Beyinler Kulübümüz öğrencileri sıkı bir başarı testinden geçirip başarılarını sertifikayla ödüllendirerek öğrencilerin sektörde yer bulma hayallerini gerçekleştirmede yardımcı olmuş ve deneyim kazanmalarında öncü olmuştur.", 
+    "Biz GDSC Erzincan olarak; üniversitemizin yetenekli, meraklı ve kendisini geliştirmek isteyen öğrencilerini bir çatı altında toplayarak çeşitli alanlarda ve konularda workshop, seminer ve eğitimler yardımıyla öğrencilere kendilerini geliştirme fırsatı sunmayı, çeşitli hackathon ve yarışmalarla problem tespit etme, çözüm üretme ve çözümleri hayata geçirmelerine yardımcı olmayı ve \"Kariyer-Teknoloji\" konuşmaları ile ilerlemek istedikleri alanı belirlemelerine sağlamayı hedefliyoruz. ",
+    "Biz GDSC Erzincan olarak; üniversitemizin yetenekli, meraklı ve kendisini geliştirmek isteyen öğrencilerini bir çatı altında toplayarak çeşitli alanlarda ve konularda workshop, seminer ve eğitimler yardımıyla öğrencilere kendilerini geliştirme fırsatı sunmayı, çeşitli hackathon ve yarışmalarla problem tespit etme, çözüm üretme ve çözümleri hayata geçirmelerine yardımcı olmayı ve \"Kariyer-Teknoloji\" konuşmaları ile ilerlemek istedikleri alanı belirlemelerine sağlamayı hedefliyoruz. ",
+    "Biz GDSC Erzincan olarak; üniversitemizin yetenekli, meraklı ve kendisini geliştirmek isteyen öğrencilerini bir çatı altında toplayarak çeşitli alanlarda ve konularda workshop, seminer ve eğitimler yardımıyla öğrencilere kendilerini geliştirme fırsatı sunmayı, çeşitli hackathon ve yarışmalarla problem tespit etme, çözüm üretme ve çözümleri hayata geçirmelerine yardımcı olmayı ve \"Kariyer-Teknoloji\" konuşmaları ile ilerlemek istedikleri alanı belirlemelerine sağlamayı hedefliyoruz. ",
+    "Biz GDSC Erzincan olarak; üniversitemizin yetenekli, meraklı ve kendisini geliştirmek isteyen öğrencilerini bir çatı altında toplayarak çeşitli alanlarda ve konularda workshop, seminer ve eğitimler yardımıyla öğrencilere kendilerini geliştirme fırsatı sunmayı, çeşitli hackathon ve yarışmalarla problem tespit etme, çözüm üretme ve çözümleri hayata geçirmelerine yardımcı olmayı ve \"Kariyer-Teknoloji\" konuşmaları ile ilerlemek istedikleri alanı belirlemelerine sağlamayı hedefliyoruz. "
+
   ],
-  typeSpeed: 10,
-  backSpeed: 40,
-  loop: false,
+  typeSpeed: 20,
+  backSpeed: 10,
+  loop: true,
 });
 
+function textkontrol() {
+  if (text.textContent == "E") {
+    kulupimg1.style.opacity = '1';
+    kulupimg2.style.opacity = '0.6'
+  }
+  if (text.textContent == "B") {
+    kulupimg1.style.opacity = '0.6';
+    kulupimg2.style.opacity = '1'
+  }
+}
+setInterval(textkontrol,100);
 var typing = new Typed(text1, {
   strings: [
-    "",
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus veniam tenetur error quibusdam architecto! Consequuntur in quia a ipsa nemo error soluta expedita provident hic labore accusantium nobis, impedit dolorum",
+    
+    "GYBK Bilişim Zirvesi, bu sektördeki yazılımcılar, bilişimciler, girişimciler ve sektörün önde gelenleri arasındaki iletişim ve etkileşimi artırmak amacıyla biz öğrencilerin bu yoldaki inancına, başarısına ve kariyerine destek olmayı amaçlayan mesleki ve sosyal bir zirvedir. Bu sene zirvemizde Mobil Geliştirme, Web Geliştirme, Veri Bilimi vb. daha birçok konuyu öğrencilerimizle buluşturarak kariyer hedeflerine ulaştırmak için bir aracı olmayı kendimize görev edindik. Zirve sonunda öğrencilerimizi sektöre karşı daha nitelikli bir şekilde uğurlayacağız."
+    
   ],
   typeSpeed: 10,
   backSpeed: 40,
@@ -91,11 +113,32 @@ function showDivs(n) {
   }
   x[slideIndex - 1].style.display = "flex";
 }
+
 function oto() {
+  if (saniyesayac == 5) {
+    slideIndex++;
+    showDivs(slideIndex);
+    saniyesayac = 0;
+  }
+}
+var saniyesayac = 0;
+function sayacfunc() {
+  saniyesayac++;
+}
+setInterval(sayacfunc, 1000);
+setInterval(oto, 1000);
+const konusmacibuttonprevious = document.querySelector(".leftbuttonkonusmaci");
+const konusmacibuttonnext = document.querySelector(".rightbuttonkonusmaci");
+konusmacibuttonprevious.onclick = function () {
+  saniyesayac = 0;
+  slideIndex--;
+  showDivs(slideIndex);
+};
+konusmacibuttonnext.onclick = function () {
+  saniyesayac = 0;
   slideIndex++;
   showDivs(slideIndex);
-}
-setInterval(oto, 5000);
+};
 
 function renk() {
   konusmacilarimiz.style.background = "rgba(255, 255, 255, 0.25)";
@@ -105,7 +148,7 @@ const saatE = document.querySelector(".saat");
 const dakikaE = document.querySelector(".dakika");
 const saniyeE = document.querySelector(".saniye");
 const gunE = document.querySelector(".gun");
-const yeniyil = "15 March 2023";
+const yeniyil = "20 March 2023";
 function gerisayim() {
   const yeniyilzaman = new Date(yeniyil);
   const suan = new Date();
@@ -161,15 +204,15 @@ function color5() {
 
 const gunbutton1 = document.querySelector(".gun1buton");
 const gunbutton2 = document.querySelector(".gun2buton");
-const guntext = document.querySelector('.guns h2');
+const guntext = document.querySelector(".guns h2");
 const butondiv = document.querySelector(".butondiv");
 gunbutton1.onclick = function () {
   gunbutton1.style.transform = "translateY(-10px)";
   gunbutton2.style.transform = "translateY(0px)";
-  guntext.textContent = '1.Gün'
+  guntext.textContent = "1.Gün";
 };
 gunbutton2.onclick = function () {
   gunbutton2.style.transform = "translateY(-10px)";
   gunbutton1.style.transform = "translateY(0px)";
-  guntext.textContent = '2.Gün'
+  guntext.textContent = "2.Gün";
 };

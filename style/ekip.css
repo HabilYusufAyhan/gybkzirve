@@ -8,7 +8,6 @@
     flex-direction: column;
     align-items: center;
     color: white;
-    gap: 25px;
     font-size: 20px;
 }
 .slick-initialized .slick-slide {
@@ -60,6 +59,18 @@
     transition: 0.3s;  
     border-radius: 20px;
     
+}
+.ekiptext{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ekipisim{
+    margin: 5px;
+}
+.ekipunvan{
+    margin: 5px;
+    font-size: 1em;
 }
 .ekipicon2{
    position: absolute;
